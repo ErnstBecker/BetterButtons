@@ -1,4 +1,4 @@
-# Rounded-Hover-Buttons
+# Better-Buttons
 --------------------------------
 # Pt-Br
 # É um programa onde mostra uma tela com 9 botões, com 3 variações de cada botão.
