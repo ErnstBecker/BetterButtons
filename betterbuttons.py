@@ -33,11 +33,11 @@ class Programa:
             self.botao_cancelar_anim.config(image=self.img_cancelar)
 
         # Caminho das Imagens.
-        self.dirname = os.path.dirname(__file__)
+        self.dirname = os.path.dirname(os.path.abspath(__file__))
 
         # Botão de Desligar.
         self.img_desligar = PhotoImage(
-            file=f'{self.dirname}\\Imagens\\botao-desligar.png')
+            file=f'{self.dirname}/Imagens/botao-desligar.png')
         self.botao_desligar = Button(root,
                                      highlightcolor='#FF0000',
                                      borderwidth=0,
@@ -63,7 +63,7 @@ class Programa:
 
         # Botão de Desligar Selecionado.
         self.img_desligar_selec = PhotoImage(
-            file=f'{self.dirname}\\Imagens\\botao-desligar-selec.png')
+            file=f'{self.dirname}/Imagens/botao-desligar-selec.png')
         self.botao_desligar_selec = Button(root,
                                            highlightcolor='#FF0000',
                                            borderwidth=0,
@@ -76,7 +76,7 @@ class Programa:
 
         # Botão de Confirmar.
         self.img_confirmar = PhotoImage(
-            file=f'{self.dirname}\\Imagens\\botao-confirmar.png')
+            file=f'{self.dirname}/Imagens/botao-confirmar.png')
         self.botao_confirmar = Button(root,
                                       highlightcolor='#FF0000',
                                       borderwidth=0,
@@ -102,7 +102,7 @@ class Programa:
 
         # Botão de Confirmar Selecionado.
         self.img_confirmar_selec = PhotoImage(
-            file=f'{self.dirname}\\Imagens\\botao-confirmar-selec.png')
+            file=f'{self.dirname}/Imagens/botao-confirmar-selec.png')
         self.botao_confirmar_selec = Button(root,
                                             highlightcolor='#FF0000',
                                             borderwidth=0,
@@ -115,7 +115,7 @@ class Programa:
 
         # Botão de Cancelar.
         self.img_cancelar = PhotoImage(
-            file=f'{self.dirname}\\Imagens\\botao-cancelar.png')
+            file=f'{self.dirname}/Imagens/botao-cancelar.png')
         self.botao_cancelar = Button(root,
                                      highlightcolor='#FF0000',
                                      borderwidth=0,
@@ -141,7 +141,7 @@ class Programa:
 
         # Botão de Cancelar Selecionado.
         self.img_cancelar_selec = PhotoImage(
-            file=f'{self.dirname}\\Imagens\\botao-cancelar-selec.png')
+            file=f'{self.dirname}/Imagens/botao-cancelar-selec.png')
         self.botao_cancelar_selec = Button(root,
                                            highlightcolor='#FF0000',
                                            borderwidth=0,
