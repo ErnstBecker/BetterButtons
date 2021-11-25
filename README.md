@@ -14,7 +14,7 @@
 # O propósito do programa é mostrar botões com estilos, e animações modernas.
 --------------------------------
 
-# Image
+# Program screenshot
 
 <div align="center">
   <img src="https://cdn.discordapp.com/attachments/913399145631457312/913417069041692692/unknown.png">
