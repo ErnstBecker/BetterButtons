@@ -103,7 +103,7 @@ class Program:
         # Green button selected.
         self.img_green_button_selec = PhotoImage(
             file=f'{self.dirname}/images/green-button-selec.png')
-        self.botao_confirmar_selec = Button(root,
+        self.green_button_selec = Button(root,
                                             highlightcolor='#FF0000',
                                             borderwidth=0,
                                             bg='#191919',
@@ -111,7 +111,7 @@ class Program:
                                             relief='flat',
                                             image=self.img_green_button_selec,
                                             command=lambda: print('Green Button Selected'))
-        self.botao_confirmar_selec.place(x=390.5, y=176)
+        self.green_button_selec.place(x=390.5, y=176)
 
         # Blue button.
         self.img_blue_button = PhotoImage(
@@ -162,7 +162,7 @@ root.title('Buttons')
 # Make it impossible to change the screen size.
 root.resizable(width=False, height=False)
 
-# Program Window
+# Program window.
 canvas = Canvas(root, width=600,
                 height=400,
                 bg='#191919',
