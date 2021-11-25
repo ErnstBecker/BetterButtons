@@ -104,13 +104,13 @@ class Program:
         self.img_green_button_selec = PhotoImage(
             file=f'{self.dirname}/images/green-button-selec.png')
         self.green_button_selec = Button(root,
-                                            highlightcolor='#FF0000',
-                                            borderwidth=0,
-                                            bg='#191919',
-                                            activebackground='#191919',
-                                            relief='flat',
-                                            image=self.img_green_button_selec,
-                                            command=lambda: print('Green Button Selected'))
+                                         highlightcolor='#FF0000',
+                                         borderwidth=0,
+                                         bg='#191919',
+                                         activebackground='#191919',
+                                         relief='flat',
+                                         image=self.img_green_button_selec,
+                                         command=lambda: print('Green Button Selected'))
         self.green_button_selec.place(x=390.5, y=176)
 
         # Blue button.
