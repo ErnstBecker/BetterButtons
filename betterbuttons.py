@@ -1,175 +1,175 @@
-# Imports Necessários.
+# Necessary imports.
 import tkinter
 from tkinter import Canvas, Button, PhotoImage
 import os
 
 
-# Criando a Classe de Programa.
-class Programa:
-    # Função principal.
+# Creating The "Program" Class.
+class Program:
+    # Main Function.
     def __init__(self, root):
-        # Função para Colocar ele Inteiramente Vermelho.
-        def desligar_anim_on(event):
-            self.botao_desligar_anim.config(image=self.img_desligar_selec)
+        # Function for make him red. (RED)
+        def red_anim_on(event):
+            self.red_button_anim.config(image=self.img_red_button_selec)
 
-        # Função para Colocar ele no Padrão.
-        def desligar_anim_off(event):
-            self.botao_desligar_anim.config(image=self.img_desligar)
+        # Function to return to default. (RED)
+        def red_anim_off(event):
+            self.red_button_anim.config(image=self.img_red_button)
 
-        # Função para Colocar ele Inteiramente Verde.
-        def confirmar_anim_on(event):
-            self.botao_confirmar_anim.config(image=self.img_confirmar_selec)
+        # Function for make him green. (GREEN)
+        def green_anim_on(event):
+            self.green_button_anim.config(image=self.img_green_button_selec)
 
-        # Função para Colocar ele no Padrão.
-        def confirmar_anim_off(event):
-            self.botao_confirmar_anim.config(image=self.img_confirmar)
+        # Function to return to default. (GREEN)
+        def green_anim_off(event):
+            self.green_button_anim.config(image=self.img_green_button)
 
-        # Função para Colocar ele Inteiramente Azul.
-        def cancelar_anim_on(event):
-            self.botao_cancelar_anim.config(image=self.img_cancelar_selec)
+        # Function for make him blue. (BLUE)
+        def blue_anim_on(event):
+            self.blue_button_anim.config(image=self.img_blue_button_selec)
 
-        # Função para Colocar ele no Padrão.
-        def cancelar_anim_off(event):
-            self.botao_cancelar_anim.config(image=self.img_cancelar)
+        # Function to return to default. (BLUE)
+        def blue_anim_off(event):
+            self.blue_button_anim.config(image=self.img_blue_button)
 
-        # Caminho das Imagens.
+        # Path of the images.
         self.dirname = os.path.dirname(os.path.abspath(__file__))
 
-        # Botão de Desligar.
-        self.img_desligar = PhotoImage(
-            file=f'{self.dirname}/Imagens/botao-desligar.png')
-        self.botao_desligar = Button(root,
-                                     highlightcolor='#FF0000',
-                                     borderwidth=0,
-                                     bg='#191919',
-                                     activebackground='#191919',
-                                     relief='flat',
-                                     image=self.img_desligar,
-                                     command=lambda: print('Desligar'))
-        self.botao_desligar.place(x=90.5, y=76)
+        # Red Button.
+        self.img_red_button = PhotoImage(
+            file=f'{self.dirname}/images/red-button.png')
+        self.red_button = Button(root,
+                                 highlightcolor='#FF0000',
+                                 borderwidth=0,
+                                 bg='#191919',
+                                 activebackground='#191919',
+                                 relief='flat',
+                                 image=self.img_red_button,
+                                 command=lambda: print('Red Button'))
+        self.red_button.place(x=90.5, y=76)
 
-        # Botão de Desligar Animado.
-        self.botao_desligar_anim = Button(root,
-                                          highlightcolor='#FF0000',
-                                          borderwidth=0,
-                                          bg='#191919',
-                                          activebackground='#191919',
-                                          relief='flat',
-                                          image=self.img_desligar,
-                                          command=lambda: print('Desligar Animado'))
-        self.botao_desligar_anim.place(x=240.5, y=76)
-        self.botao_desligar_anim.bind('<Enter>', desligar_anim_on)
-        self.botao_desligar_anim.bind('<Leave>', desligar_anim_off)
-
-        # Botão de Desligar Selecionado.
-        self.img_desligar_selec = PhotoImage(
-            file=f'{self.dirname}/Imagens/botao-desligar-selec.png')
-        self.botao_desligar_selec = Button(root,
-                                           highlightcolor='#FF0000',
-                                           borderwidth=0,
-                                           bg='#191919',
-                                           activebackground='#191919',
-                                           relief='flat',
-                                           image=self.img_desligar_selec,
-                                           command=lambda: print('Desligar Selecionado'))
-        self.botao_desligar_selec.place(x=390.5, y=76)
-
-        # Botão de Confirmar.
-        self.img_confirmar = PhotoImage(
-            file=f'{self.dirname}/Imagens/botao-confirmar.png')
-        self.botao_confirmar = Button(root,
+        # Red button animated.
+        self.red_button_anim = Button(root,
                                       highlightcolor='#FF0000',
                                       borderwidth=0,
                                       bg='#191919',
                                       activebackground='#191919',
                                       relief='flat',
-                                      image=self.img_confirmar,
-                                      command=lambda: print('Confirmar'))
-        self.botao_confirmar.place(x=90.5, y=176)
+                                      image=self.img_red_button,
+                                      command=lambda: print('Red Button Animated'))
+        self.red_button_anim.place(x=240.5, y=76)
+        self.red_button_anim.bind('<Enter>', red_anim_on)
+        self.red_button_anim.bind('<Leave>', red_anim_off)
 
-        # Botão de Confirmar Animado.
-        self.botao_confirmar_anim = Button(root,
-                                           highlightcolor='#FF0000',
-                                           borderwidth=0,
-                                           bg='#191919',
-                                           activebackground='#191919',
-                                           relief='flat',
-                                           image=self.img_confirmar,
-                                           command=lambda: print('Confirmar Animado'))
-        self.botao_confirmar_anim.place(x=240.5, y=176)
-        self.botao_confirmar_anim.bind('<Enter>', confirmar_anim_on)
-        self.botao_confirmar_anim.bind('<Leave>', confirmar_anim_off)
+        # Red button selected.
+        self.img_red_button_selec = PhotoImage(
+            file=f'{self.dirname}/images/red-button-selec.png')
+        self.red_button_selec = Button(root,
+                                       highlightcolor='#FF0000',
+                                       borderwidth=0,
+                                       bg='#191919',
+                                       activebackground='#191919',
+                                       relief='flat',
+                                       image=self.img_red_button_selec,
+                                       command=lambda: print('Red Button Selected'))
+        self.red_button_selec.place(x=390.5, y=76)
 
-        # Botão de Confirmar Selecionado.
-        self.img_confirmar_selec = PhotoImage(
-            file=f'{self.dirname}/Imagens/botao-confirmar-selec.png')
+        # Green button.
+        self.img_green_button = PhotoImage(
+            file=f'{self.dirname}/images/green-button.png')
+        self.green_button = Button(root,
+                                   highlightcolor='#FF0000',
+                                   borderwidth=0,
+                                   bg='#191919',
+                                   activebackground='#191919',
+                                   relief='flat',
+                                   image=self.img_green_button,
+                                   command=lambda: print('Green Button'))
+        self.green_button.place(x=90.5, y=176)
+
+        # Green button animated.
+        self.green_button_anim = Button(root,
+                                        highlightcolor='#FF0000',
+                                        borderwidth=0,
+                                        bg='#191919',
+                                        activebackground='#191919',
+                                        relief='flat',
+                                        image=self.img_green_button,
+                                        command=lambda: print('Green Button Animated'))
+        self.green_button_anim.place(x=240.5, y=176)
+        self.green_button_anim.bind('<Enter>', green_anim_on)
+        self.green_button_anim.bind('<Leave>', green_anim_off)
+
+        # Green button selected.
+        self.img_green_button_selec = PhotoImage(
+            file=f'{self.dirname}/images/green-button-selec.png')
         self.botao_confirmar_selec = Button(root,
                                             highlightcolor='#FF0000',
                                             borderwidth=0,
                                             bg='#191919',
                                             activebackground='#191919',
                                             relief='flat',
-                                            image=self.img_confirmar_selec,
-                                            command=lambda: print('Confirmar Selecionado'))
+                                            image=self.img_green_button_selec,
+                                            command=lambda: print('Green Button Selected'))
         self.botao_confirmar_selec.place(x=390.5, y=176)
 
-        # Botão de Cancelar.
-        self.img_cancelar = PhotoImage(
-            file=f'{self.dirname}/Imagens/botao-cancelar.png')
-        self.botao_cancelar = Button(root,
-                                     highlightcolor='#FF0000',
-                                     borderwidth=0,
-                                     bg='#191919',
-                                     activebackground='#191919',
-                                     relief='flat',
-                                     image=self.img_cancelar,
-                                     command=lambda: print('Cancelar'))
-        self.botao_cancelar.place(x=90.5, y=276)
+        # Blue button.
+        self.img_blue_button = PhotoImage(
+            file=f'{self.dirname}/images/blue-button.png')
+        self.blue_button = Button(root,
+                                  highlightcolor='#FF0000',
+                                  borderwidth=0,
+                                  bg='#191919',
+                                  activebackground='#191919',
+                                  relief='flat',
+                                  image=self.img_blue_button,
+                                  command=lambda: print('Blue Button'))
+        self.blue_button.place(x=90.5, y=276)
 
-        # Botão de Cancelar Animado.
-        self.botao_cancelar_anim = Button(root,
-                                          highlightcolor='#FF0000',
-                                          borderwidth=0,
-                                          bg='#191919',
-                                          activebackground='#191919',
-                                          relief='flat',
-                                          image=self.img_cancelar,
-                                          command=lambda: print('Cancelar Animado'))
-        self.botao_cancelar_anim.place(x=240.5, y=276)
-        self.botao_cancelar_anim.bind('<Enter>', cancelar_anim_on)
-        self.botao_cancelar_anim.bind('<Leave>', cancelar_anim_off)
+        # Blue button animated.
+        self.blue_button_anim = Button(root,
+                                       highlightcolor='#FF0000',
+                                       borderwidth=0,
+                                       bg='#191919',
+                                       activebackground='#191919',
+                                       relief='flat',
+                                       image=self.img_blue_button,
+                                       command=lambda: print('Blue Button Animated'))
+        self.blue_button_anim.place(x=240.5, y=276)
+        self.blue_button_anim.bind('<Enter>', blue_anim_on)
+        self.blue_button_anim.bind('<Leave>', blue_anim_off)
 
-        # Botão de Cancelar Selecionado.
-        self.img_cancelar_selec = PhotoImage(
-            file=f'{self.dirname}/Imagens/botao-cancelar-selec.png')
-        self.botao_cancelar_selec = Button(root,
-                                           highlightcolor='#FF0000',
-                                           borderwidth=0,
-                                           bg='#191919',
-                                           activebackground='#191919',
-                                           relief='flat',
-                                           image=self.img_cancelar_selec,
-                                           command=lambda: print('Cancelar Selecionado'))
-        self.botao_cancelar_selec.place(x=390.5, y=276)
+        # Blue button selected.
+        self.img_blue_button_selec = PhotoImage(
+            file=f'{self.dirname}/images/blue-button-selec.png')
+        self.blue_button_selec = Button(root,
+                                        highlightcolor='#FF0000',
+                                        borderwidth=0,
+                                        bg='#191919',
+                                        activebackground='#191919',
+                                        relief='flat',
+                                        image=self.img_blue_button_selec,
+                                        command=lambda: print('Blue Button Selected'))
+        self.blue_button_selec.place(x=390.5, y=276)
 
 
-# Para iniciar o TKinter.
+# For start Tkinter.
 root = tkinter.Tk()
 
-# Colocar o título da janela.
+# Title of the window.
 root.title('Buttons')
 
-# Fazer com que não dê para alterar o tamanho da tela.
+# Make it impossible to change the screen size.
 root.resizable(width=False, height=False)
 
-# Tela do Programa.
-tela_canvas = Canvas(root, width=600,
-                     height=400,
-                     bg='#191919',
-                     relief='flat')
-tela_canvas.pack()
+# Program Window
+canvas = Canvas(root, width=600,
+                height=400,
+                bg='#191919',
+                relief='flat')
+canvas.pack()
 
-# Função para apenas executar se for o programa principal.
+# Function to run only the main program.
 if __name__ == '__main__':
-    App = Programa(root)
+    App = Program(root)
     root.mainloop()
