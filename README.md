@@ -54,8 +54,10 @@ Using Bash
 $ git clone https://github.com/ErnstBeckerNeto/BetterButtons.git
 
 # Open the folder with the terminal or shell and run the code:
+
 # Windows:
 $ python -u betterbuttons.py
+
 # Linux: 
 $ python3 -u betterbuttons.py
 ```
