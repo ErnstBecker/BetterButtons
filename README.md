@@ -24,7 +24,7 @@
 
 ### 💻 Project
 
-I'ts a program who show a window with 9 buttons, with 3 variants of the each button.
+It's a program who show a window with 9 buttons, with 3 variants of the each button.
 <br>The purpose of the program its show buttons with styles, and modern animations.
 
 ### 📸 Program screenshot
