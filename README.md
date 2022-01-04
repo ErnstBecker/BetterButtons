@@ -73,7 +73,7 @@ $ git clone https://github.com/ErnstBeckerNeto/BetterButtons.git
 # Opening the folder, you will find the .exe file, only need to open it.
 ```
 
-### 🚀 technologies
+### 🚀 Technologies
 
 - Python
 
