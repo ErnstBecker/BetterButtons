@@ -82,13 +82,15 @@ $ git clone https://github.com/ErnstBeckerNeto/BetterButtons.git
 
 <hr>
 
-### <h2>🚀 Technologies<h2>
-
-- Python
+<h2>🚀 Technologies<h2>
+<ul>
+    <li>Python
+</ul>
+</div>
 
 ### <h2>📕 Libraries</h2>
-
-This project was used from the following libs:
+    
+<p>This project was used from the following libs:</p>
 
 <ul>
     <li>tkinter
