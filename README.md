@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-    <a href="https://github.com/ErnstBeckerNeto">
+    <a href="https://github.com/ErnstBeckerNeto/BetterButtons">
     <img height="150px" src="https://github-readme-stats.vercel.app/api/pin/?username=ernstbeckerneto&repo=betterbuttons&theme=gotham">
     <img height="150px" width="150px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
 </div>
