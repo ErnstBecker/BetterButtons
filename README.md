@@ -31,9 +31,9 @@ It's a program who show a window with 9 buttons, with 3 variants of each button.
 
 ### <h2>📸 Screenshot</h2>
 
-<div align="center" style="inline-block">
-    <img width="49%" height="49%" src="https://cdn.discordapp.com/attachments/913399145631457312/913417069041692692/unknown.png">
-    <img width="49%" height="49%" src="https://cdn.discordapp.com/attachments/913399145631457312/913417069041692692/unknown.png">
+<div style="inline-block">
+    <img width="40%" height="40%" src="https://cdn.discordapp.com/attachments/913399145631457312/913417069041692692/unknown.png">
+    <img style="inline-block" width="60%" height="60%" src="https://cdn.discordapp.com/attachments/913399145631457312/980836247964614707/Betterbuttons-gif.gif">
 </div>
 
 <hr>
